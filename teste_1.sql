@@ -1,0 +1,15 @@
+CREATE SCHEMA IF NOT EXISTS TESTE_1;
+
+USE TESTE_1;
+
+CREATE TABLE IF NOT EXISTS Vendedor(
+	nVendedorID INT AUTO_INCREMENT,
+    strNome VARCHAR(100),
+    nGerenteID INT,
+    PRIMARY KEY (nVendedorID)
+);
+
+INSERT INTO Vendedor
+VALUE 	(DEFAULT, 'joao', NULL),
+		(DEFAULT, 'pedro', NULL),
+        (DEFAULT, 'Lelê', NULL);
